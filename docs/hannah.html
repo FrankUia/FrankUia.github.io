@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frank</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="menu-list">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="frank.html">Frank</a></li>
+      <li><a href="hannah.html">Hannah</a></li>
+      <li><a href="nina.html">Nina</a></li>
+      <li><a href="gokhan.html">Gokhan</a></li>
+      <li><a href="lars.html">Lars</a></li>
+    </ul>
+  </nav>
+
+  <div class="main">
+    <section class="content">
+      <h1>Hannah</h1>
+      <p> Hei! Jeg heter Hannah T. Klavenes, 19 år og er fra Sandefjord. 
+        For tiden studerer jeg ved UiA der jeg går bachelor i IT og Informasjonssystemer. 
+        Videre ønsker jeg å kanskje ta en master i cybersikkerhet. På fritiden liker jeg å være med venner, 
+        trene og henge med jentene i kollektivet.</p>
+      <li><a href="https://github.com/Hannahtk04/ProObligGruppe3">Lenke til originale Pyret kode</a></li>
+      <div class="picture-text">
+        <h2>SVG og Canvas</h2>
+        
+      <div class="pictures">
+        <svg id="svgCanvas" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="200,330 150,150 250,150" style="fill:peru;"/>
+      
+          <circle cx="200" cy="150" r="50" style="fill:pink;"/>
+        </svg>
+      
+        <script>
+          var circleX = 200;
+          var circleY = 150;
+      
+          function FlyttSirkel() {
+            circleX += 10;
+            SirkelPos();
+          }
+      
+          function SirkelPos() {
+            var circle = document.FåElement('circleElement');
+            circle.sA('cx', circleX);
+            circle.sA('cy', circleY);
+          }
+        </script>
+        
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Simple 2D Cat</title>
+          <style>
+            canvas {
+              border: 1px solid #000;
+            }
+          </style>
+        </head>
+        <body>
+          <canvas id="Canvas" width="400" height="400"></canvas>
+        
+          <script>
+             var canvas = document.getElementById('Canvas');
+    var ctx = canvas.getContext('2d');
+    var circleX = 198;
+    var circleY = 230;
+
+    function drawTriangle() {
+      ctx.beginPath();
+      ctx.moveTo(200, 330);
+      ctx.lineTo(150, 150);
+      ctx.lineTo(250, 150);
+      ctx.closePath();
+      ctx.fillStyle = 'peru';
+      ctx.fill();
+    }
+
+    function drawCircle(x, y) {
+      ctx.beginPath();
+      ctx.arc(x, y, 50, 0, Math.PI * 2, false);
+      ctx.fillStyle = 'pink';
+      ctx.fill();
+    }
+
+    function clearCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+
+    drawTriangle();
+    drawCircle(200, 140);
+         
+          </script>
+        </body>
+        
+
+      </div>
+    </section>
+  </div>
+  <div class="main"> <h1>Beregning av fotavtrykk</h1>
+    <p>For å beregne det økologiske fotavtrykket, så må man finne ut av den totale mengden klimagasser, oftest CO2, man påfører atmosfæren grunnet menneskelige aktiviteter. Faktorer som spiller inn her er mengden bruk av transportmidler, hvor mye energi man bruker, generelt forbruk o.l. Under ligger det en representasjon laget i Pyret på hvordan en slik beregning kan se ut.   </p></div>
+ 
+  <div class="pictures2">
+    <img class="pictures2" src="images\klima.png" alt="Klima" />
+  </div>
+
+
+  <footer>
+    <p>Høsten 2023 3B</p>
+  </footer>
+</body>
+</html>

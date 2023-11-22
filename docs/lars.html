@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lars</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="frank.html">Frank</a></li>
+            <li><a href="hannah.html">Hannah</a></li>
+            <li><a href="nina.html">Nina</a></li>
+            <li><a href="gokhan.html">Gokhan</a></li>
+            <li><a href="lars.html">Lars</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <section class="content">
+            <h1>Lars</h1>
+            <p>Hei, jeg heter Lars er født i 2002 og kommer fra Varhaug på jæren. Jeg beggynte på UIA for å ta årstudie i It og informasjonsystem. Jeg liker å holde meg aktiv med trening for eksempel fotball og er intresert i koding og programering. Jeg misliker for mye stress og å bare sitte inne hele dagen.</p>
+            <ul>
+              <li><a href="https://github.com/Larskyd/Oblig3/tree/main">Lenke til originale Pyret kode</a></li>
+          </ul>
+            <div class="picture-text">
+                <h2>SVG og Canvas</h2>
+                
+          
+         
+                <svg id="fishCanvas" xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+              
+                    <rect x="250" y="250" width="150" height="100" fill="#ADD8E6"/>
+                    <circle cx="400" cy="300" r="50" fill="#ADD8E6"/>
+                    <polygon points="250,250 150,300 250,350" fill="#ADD8E6"/>
+                    <polygon points="120,250 250,300 120,350" fill="#ADD8E6"/>
+                    <polygon points="290,235 350,250 280,250" fill="#ADD8E6"/>
+                    <polygon points="290,300 350,315 350,285" fill="#4682B4"/>
+                    <circle cx="425" cy="290" r="10" fill="white"/>
+                    <circle cx="430" cy="295" r="2" fill="black"/>
+                </svg>   
+                <svg id="fishCanvas" xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+              
+                  <rect x="250" y="250" width="150" height="100" fill="#ADD8E6"/>
+                  <circle cx="400" cy="300" r="50" fill="#ADD8E6"/>
+                  <polygon points="250,250 150,300 250,350" fill="#ADD8E6"/>
+                  <polygon points="120,250 250,300 120,350" fill="#ADD8E6"/>
+                  <polygon points="290,235 350,250 280,250" fill="#ADD8E6"/>
+                  <polygon points="290,300 350,315 350,285" fill="#4682B4"/>
+                  <circle cx="425" cy="290" r="10" fill="white"/>
+                  <circle cx="430" cy="295" r="2" fill="black"/>
+              </svg>       
+            
+                <script>
+                  var canvas = document.getElementById('fishCanvas');
+                  var ctx = canvas.getContext('2d');
+          
+                  // body
+                  ctx.fillStyle = "#ADD8E6";
+                  ctx.fillRect(250,250,150,100);
+          
+                  //head
+                  ctx.arc(400, 300, 50, 0, 2 * Math.PI);
+                  ctx.fill();
+          
+                  //back
+                  ctx.beginPath();
+                  ctx.moveTo(250, 250);
+                  ctx.lineTo(150, 300);
+                  ctx.lineTo(250, 350);
+                  ctx.closePath();
+                  ctx.fill();
+          
+                  //fin
+                  ctx.beginPath();
+                  ctx.moveTo(120, 250);
+                  ctx.lineTo(250, 300);
+                  ctx.lineTo(120, 350);
+                  ctx.closePath();
+                  ctx.fill();
+          
+                  //back fin
+                  ctx.beginPath();
+                  ctx.moveTo(290, 235);
+                  ctx.lineTo(350, 250);
+                  ctx.lineTo(280, 250);
+                  ctx.closePath();
+                  ctx.fill();
+          
+                  //mid fin
+                  ctx.fillStyle = "#4682B4";
+                  ctx.beginPath();
+                  ctx.moveTo(290, 300);
+                  ctx.lineTo(350, 315);
+                  ctx.lineTo(350, 285);
+                  ctx.closePath();
+                  ctx.fill();
+          
+                  //eye
+                  ctx.fillStyle = "white";
+                  ctx.beginPath();
+                  ctx.arc(425, 290, 10, 0, 2 * Math.PI);
+                  ctx.closePath();
+                  ctx.fill();
+          
+                  //eye
+                  ctx.fillStyle = "black";
+                  ctx.beginPath();
+                  ctx.arc(430, 295, 2, 0, 2 * Math.PI);
+                  ctx.closePath();
+                  ctx.fill();
+                  </script>
+                
+                           
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="main">
+        <h1>Beregning av fotavtrykk</h1>
+        <p>For å beregne energiforbruket til enkelte når det kommer til bil, så tok jeg og snakket med en som kjører bil til jobb hver dag. Til slutt kom jeg frem til disse verdiene:
+            distance-travelled-per-day = 40
+            • Denne verdien forteller om hvor lang distanse en person bruker på å kjøre per dag.
+            distance-per-unit-of-fuel = 10
+            • For å kunne få denne verdien så tok jeg å dele 38,6243 km med 3,78541 1, for så å få 10,2, som jeg senere rundet av til 10 km/.
+            energy-per-unit-of-fuel = 4
+            For å kunne få "energy-per-unit-of-fuel", dividerte jeg 40 km med 10,2 km/1, som igjen får 3,92 som svar, som jeg senere rundet av til 4.
+            Som resultat fikk jeg 16.</p>
+    </div>
+
+    <div class="pictures2">
+        <img class="pictures2" src="images\klima.png" alt="Klima" />
+    </div>
+
+    <footer>
+        <p>Høsten 2023 3B</p>
+    </footer>
+</body>
+</html>

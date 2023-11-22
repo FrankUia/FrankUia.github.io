@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nina</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="frank.html">Frank</a></li>
+            <li><a href="hannah.html">Hannah</a></li>
+            <li><a href="nina.html">Nina</a></li>
+            <li><a href="gokhan.html">Gokhan</a></li>
+            <li><a href="lars.html">Lars</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <section class="content">
+            <h1>Nina</h1>
+            <p>Jeg heter Nina, 04 og er fra vestfold. Jeg kom til Kristiansand for å ta min bachelor i IT og informasjonssystemer for å videre bli en developer. Jeg liker ferier, men misliker eksamener. Koding er gøy når det funker, men morsomt når man ikke vet hvorfor den gjør det.</p>
+            <li><a href="https://github.com/hltnina/Work_IS-114/blob/main/IS-114/Progoblig%203%2C%20canvas/huynh%2C%20progoblig%203.arr">Lenke til originale Pyret kode</a></li>
+            <div class="picture-text">
+                <h2>SVG og Canvas</h2>
+                <div class="pictures">
+                    <svg id="svgCanvas" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                    
+                    </svg>
+                    <canvas id="house-Canvas" width="400" height="400"></canvas>
+                    <script>
+                        const canvas = document.getElementById("house-Canvas");
+                        const ctx = canvas.getContext("2d");
+    
+                        // The walls
+                        ctx.fillStyle = "#89CFF0";
+                        ctx.fillRect(200, 150, 160, 200);
+    
+                        // The door
+                        ctx.fillStyle = "#EADDCA";
+                        ctx.fillRect(235, 250, 90, 100);
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.fillRect(277, 250, 5, 100);
+    
+                        // The windows
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.fillRect(210, 180, 50, 50);
+                        ctx.fillRect(300, 180, 50, 50);
+    
+                        // The roof
+                        ctx.moveTo(200, 150);
+                        ctx.lineTo(280, 70);
+                        ctx.lineTo(360, 150);
+                        ctx.lineTo(200, 150);
+                        ctx.closePath();
+                        ctx.fillStyle = "#F4C2C2";
+                        ctx.fill();
+    
+                        const svg = document.getElementById("svgCanvas");
+    
+                        // The walls
+                        const wall = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        wall.setAttribute("x", "200");
+                        wall.setAttribute("y", "150");
+                        wall.setAttribute("width", "160");
+                        wall.setAttribute("height", "200");
+                        wall.setAttribute('fill', '#89CFF0');
+                        svg.appendChild(wall);
+    
+                        // The front door
+                        const doorMain = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        doorMain.setAttribute("x", "235");
+                        doorMain.setAttribute("y", "250");
+                        doorMain.setAttribute("width", "90");
+                        doorMain.setAttribute("height", "100");
+                        doorMain.setAttribute("fill", "#EADDCA");
+                        svg.appendChild(doorMain);
+    
+                        const doorHandle = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        doorHandle.setAttribute("x", "277");
+                        doorHandle.setAttribute("y", "250");
+                        doorHandle.setAttribute("width", "5");
+                        doorHandle.setAttribute("height", "100");
+                        doorHandle.setAttribute("fill", "#FFFFFF");
+                        svg.appendChild(doorHandle);
+    
+                        // The windows
+                        const window1 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        window1.setAttribute("x", "210");
+                        window1.setAttribute("y", "180");
+                        window1.setAttribute("width", "50");
+                        window1.setAttribute("height", "50");
+                        window1.setAttribute("fill", "#FFFFFF");
+                        svg.appendChild(window1);
+    
+                        const window2 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        window2.setAttribute("x", "300");
+                        window2.setAttribute("y", "180");
+                        window2.setAttribute("width", "50");
+                        window2.setAttribute("height", "50");
+                        window2.setAttribute("fill", "#FFFFFF");
+                        svg.appendChild(window2);
+    
+                        // The roof
+                        const roof = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                        roof.setAttribute("d", "M200 150 L280 70 L360 150 Z");
+                        roof.setAttribute("fill", "#F4C2C2");
+                        svg.appendChild(roof);
+                    </script>
+                </div>
+                    <script>
+                    const canvas = document.getElementById("house-Canvas");
+const ctx = canvas.getContext("2d");
+
+// The walls
+ctx.fillStyle = "#89CFF0";
+ctx.fillRect(200, 150, 160, 200);
+
+
+// The door
+ctx.fillStyle = "#EADDCA";
+ctx.fillRect(235, 250, 90, 100);
+ctx.fillStyle = "#FFFFFF";
+ctx.fillRect(277, 250, 5, 100);
+
+
+// The windows
+ctx.fillStyle = "#FFFFFF";
+ctx.fillRect(210, 180, 50, 50);
+ctx.fillRect(300, 180, 50, 50);
+
+
+// The roof
+ctx.moveTo(200, 150);
+ctx.lineTo(280, 70);
+ctx.lineTo(360, 150);
+ctx.lineTo(200, 150);
+ctx.closePath();
+ctx.fillStyle="#F4C2C2";
+ctx.fill();
+const svg = document.getElementById("houseSVG");
+
+// The walls
+const wall = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+wall.setAttribute("x", "200");
+wall.setAttribute("y", "150");
+wall.setAttribute("width", "160");
+wall.setAttribute("height", "200");
+wall.setAttribute('fill', '#89CFF0');
+svg.appendChild(wall);
+
+// The front door
+const doorMain = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+doorMain.setAttribute("x", "235");
+doorMain.setAttribute("y", "250");
+doorMain.setAttribute("width", "90");
+doorMain.setAttribute("height", "100");
+doorMain.setAttribute("fill", "#EADDCA");
+svg.appendChild(doorMain);
+
+const doorHandle = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+doorHandle.setAttribute("x", "277");
+doorHandle.setAttribute("y", "250");
+doorHandle.setAttribute("width", "5");
+doorHandle.setAttribute("height", "100");
+doorHandle.setAttribute("fill", "#FFFFFF");
+svg.appendChild(doorHandle);
+
+// The windows
+const window1 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+window1.setAttribute("x", "210");
+window1.setAttribute("y", "180");
+window1.setAttribute("width", "50");
+window1.setAttribute("height", "50");
+window1.setAttribute("fill", "#FFFFFF");
+svg.appendChild(window1);
+
+const window2 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+window2.setAttribute("x", "300");
+window2.setAttribute("y", "180");
+window2.setAttribute("width", "50");
+window2.setAttribute("height", "50");
+window2.setAttribute("fill", "#FFFFFF");
+svg.appendChild(window2);
+
+// The roof
+const roof = document.createElementNS("http://www.w3.org/2000/svg", "path");
+roof.setAttribute("d", "M200 150 L280 70 L360 150 Z");
+roof.setAttribute("fill", "#F4C2C2");
+svg.appendChild(roof);
+                    </script>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="main">
+        <h1>Beregning av fotavtrykk</h1>
+        <p>For å beregne energiforbruket til enkelte når det kommer til bil, så tok jeg og snakket med en som kjører bil til jobb hver dag. Til slutt kom jeg frem til disse verdiene:
+            distance-travelled-per-day = 40
+            • Denne verdien forteller om hvor lang distanse en person bruker på å kjøre per dag.
+            distance-per-unit-of-fuel = 10
+            • For å kunne få denne verdien så tok jeg å dele 38,6243 km med 3,78541 1, for så å få 10,2, som jeg senere rundet av til 10 km/.
+            energy-per-unit-of-fuel = 4
+            For å kunne få "energy-per-unit-of-fuel", dividerte jeg 40 km med 10,2 km/1, som igjen får 3,92 som svar, som jeg senere rundet av til 4.
+            Som resultat fikk jeg 16.</p>
+    </div>
+
+    <div class="pictures2">
+        <img class="pictures2" src="images\klima.png" alt="Klima" />
+    </div>
+
+    <footer>
+        <p>Høsten 2023 3B</p>
+    </footer>
+</body>
+</html>

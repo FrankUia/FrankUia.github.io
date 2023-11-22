@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frank</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="menu-list">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="frank.html">Frank</a></li>
+      <li><a href="hannah.html">Hannah</a></li>
+      <li><a href="nina.html">Nina</a></li>
+      <li><a href="gokhan.html">Gokhan</a></li>
+      <li><a href="lars.html">Lars</a></li>
+    </ul>
+  </nav>
+
+  <div class="main">
+    <section class="content">
+      <h1>Gökhan</h1>
+      <p>Hei, Om Meg
+        Jeg heter Gökhan Güzeler
+        
+        Jeg er 45 år gammel og har bodd i Norge i omtrent 5 år. Jeg er gift og far til 2 barn.
+        
+        I Tyrkia hadde jeg et forsikringsbyrå, eiendomsmeglerkontor, bilforhandler og firmaer for pakking og eksport av tørr mat.
+        
+        Akkurat nå tar jeg IT-utdanning. Å lære i et nytt språk er spesielt utfordrende, men jeg gjør mitt beste.
+        
+        
+        
+  </p>
+      <li><a href="">Lenke til originale Pyret kode</a></li>
+      <div class="picture-text">
+        <h2>SVG og Canvas</h2>
+        <div class="picturesG">
+          <svg id="Svg" width="400" height="400" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const svg = document.getElementById("Svg");
+          
+          const backgroundRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+          backgroundRect.setAttribute("x", "0");
+          backgroundRect.setAttribute("y", "0");
+          backgroundRect.setAttribute("width", "300");
+          backgroundRect.setAttribute("height", "300");
+          backgroundRect.setAttribute("fill", "white");
+          backgroundRect.setAttribute("stroke", "black");
+          svg.appendChild(backgroundRect);
+          
+          const robotBody = createRect(110, 90, 80, 120, "green");
+          const robotHead = createCircle(150, 60, 30, "silver");
+          const antenna = createRect(147, 20, 6, 10, "red");
+          const leftArm = createRect(190, 90, 15, 60, "blue");
+          const rightArm = createRect(95, 90, 15, 60, "blue");
+          
+          svg.appendChild(robotBody);
+          svg.appendChild(robotHead);
+          svg.appendChild(antenna);
+          svg.appendChild(leftArm);
+          svg.appendChild(rightArm);
+          
+          function createRect(x, y, width, height, fill) {
+            const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            rect.setAttribute("x", x.toString());
+            rect.setAttribute("y", y.toString());
+            rect.setAttribute("width", width.toString());
+            rect.setAttribute("height", height.toString());
+            rect.setAttribute("fill", fill);
+            return rect;
+          }
+          
+          function createCircle(cx, cy, r, fill) {
+            const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("cx", cx.toString());
+            circle.setAttribute("cy", cy.toString());
+            circle.setAttribute("r", r.toString());
+            circle.setAttribute("fill", fill);
+            return circle;
+          }
+        });
+        </script>
+        </svg>
+        
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title></title>
+          <style>
+            canvas {
+              border: 1px solid #000;
+            }
+          </style>
+        </head>
+        <body>
+          <canvas id="Canvas" width="300" height="300"></canvas>
+        
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const canvas = document.getElementById("Canvas");
+    const ctx = canvas.getContext("2d");
+  
+    const BGWidth = 300;
+    const BGHeight = 300;
+  
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, BGWidth, BGHeight);
+    ctx.strokeRect(0, 0, BGWidth, BGHeight);
+  
+    const robotBody = { width: 80, height: 100, color: "green" };
+    const robotHead = { radius: 30, color: "silver" };
+    const leftArm = { width: 10, height: 40, color: "blue" };
+    const rightArm = { width: 10, height: 40, color: "blue" };
+    const antenna = { width: 10, height: 20, color: "red" };
+  
+    drawComponent(leftArm, BGWidth / 3, 120);
+    drawComponent(rightArm, 200, 120);
+    drawComponent(antenna, BGWidth / 2, 40);
+    drawComponent(robotHead, BGWidth / 2, 70);
+    drawComponent(robotBody, BGWidth / 2, 150);
+  
+    function drawComponent(component, x, y) {
+      ctx.fillStyle = component.color;
+  
+      if (component.width && component.height) {
+        ctx.fillRect(
+          x - component.width / 2,
+          y - component.height / 2,
+          component.width,
+          component.height
+        );
+        ctx.strokeRect(
+          x - component.width / 2,
+          y - component.height / 2,
+          component.width,
+          component.height
+        );
+      } else if (component.radius) {
+        ctx.beginPath();
+        ctx.arc(x, y, component.radius, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+      }
+    }
+  });
+  
+        
+        
+          </script>
+        </body>
+        
+
+      </div>
+    </section>
+  </div>
+  <div class="main"> <h1>Beregning av fotavtrykk</h1>
+    <p>På vei til universitetet fra Grimstad til Kristiansad målte jeg hvor langt jeg reiste hver dag for å beregne mitt daglige karbonfotavtrykk. Jeg konkluderte med at jeg reiste 44 kilometer per dag og regnet ut hvor mange kilometer jeg kunne kjøre med 1 liter drivstoff, som er omtrent 1 liter. 10 kilometer per liter. Den totale energien jeg bruker per liter drivstoff er ca. 4 kilometer.
+      For å finne mitt daglige karbonavtrykk multipliserte jeg den daglige distansen (44 kilometer) med energiforbruket per liter drivstoff (4 kilometer) for å beregne mitt daglige karbonfotavtrykk som 176 kilometer. Dette representerer den estimerte mengden karbonutslipp fra min daglige pendling til universitetet.</p></div>
+ 
+  <div class="pictures2">
+    <img class="pictures2" src="images\klima.png" alt="Klima" />
+  </div>
+
+
+  <footer>
+    <p>Høsten 2023 3B</p>
+  </footer>
+</body>
+</html>

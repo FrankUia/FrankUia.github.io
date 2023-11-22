@@ -1,0 +1,75 @@
+#HEAD
+bgW = 400
+bgH = 400
+earrotation1 = 25
+earrotation2 = -25
+noserotation = 127
+
+######################################################################
+
+BG = rectangle(bgW, bgH, "solid", "gray")
+head = ellipse(160, 130, "solid", "black")
+earL= rotate(earrotation1,
+  triangle(50, "solid", "black"))
+earR= rotate(earrotation2,
+  triangle(50, "solid", "black"))
+earL2= rotate(earrotation1,
+  triangle(20, "solid", "red"))
+earR2= rotate(earrotation2,
+  triangle(20, "solid", "red"))
+
+######################################################################
+
+whisker1 = rotate(70, rectangle(3, 70, "solid", "white"))
+whisker2 = rotate(90, rectangle(3, 70, "solid", "white"))
+whisker3 = rotate(110, rectangle(3, 70, "solid", "white"))
+whisker4 = rotate(-70, rectangle(3, 70, "solid", "white"))
+whisker5 = rotate(-90, rectangle(3, 70, "solid", "white"))
+whisker6 = rotate(-110, rectangle(3, 70, "solid", "white"))
+
+######################################################################
+
+ear1 = overlay-align("center", "center", earL2, earL)
+ear2 = overlay-align("center", "center", earR2, earR)
+
+######################################################################
+
+eye = ellipse(25, 10, "solid", "yellow")
+eyebg = ellipse(5, 10, "solid", "black")
+
+######################################################################
+
+eye1 = rotate(10, overlay-align("center", "center", eyebg, eye))
+eye2 = rotate(-10, overlay-align("center", "center", eyebg, eye))
+
+######################################################################
+
+noseleft = rotate(noserotation, crop(0, 0, 5, 20, circle(10, "solid", "black")))
+noseright = rotate(150, crop(0, 0, 10, 20, circle(10, "outline", "black")))
+
+######################################################################
+
+mouth1 = ellipse(15, 10, "solid", "white")
+mouth2 = rectangle(3, 10, "solid", "white")
+mouth3 = rotate(60, rectangle(3, 10, "solid", "white"))
+mouth4 = rotate(-60, rectangle(3, 10, "solid", "white"))
+
+######################################################################
+
+put-image(ear1, 150, 253, 
+  put-image(ear2, 250, 253,
+    put-image(mouth1, 200, 180,
+      put-image(mouth2, 200, 170,
+        put-image(mouth3, 205, 164,
+          put-image(mouth4, 195, 164,
+            put-image(whisker1, 140, 190,
+              put-image(whisker2, 137, 170,
+                put-image(whisker3, 140, 150,
+                  put-image(whisker4, 260, 190,
+                    put-image(whisker5, 263, 170,
+                      put-image(whisker6, 260, 150,
+                        put-image(noseleft, 250, 230,
+                          put-image(eye1, 230, 215,
+                            put-image(eye2, 170, 215,
+                              put-image(head, bgH / 2, bgW / 2, BG))))))))))))))))
+
