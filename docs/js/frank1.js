@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple 2D Cat SVG</title>
-</head>
-<body>
+
   <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
     <rect x="0" y="0" width="400" height="400" fill="gray"/>
 
@@ -44,6 +37,4 @@ var offsety = 50
 
     <!-- Nose -->
     <ellipse cx="200" cy="220" rx="7" ry="3" fill="white"/>
-  </svg>
-</body>
-</html>
+</svg>
